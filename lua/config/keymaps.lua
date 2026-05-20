@@ -152,3 +152,4 @@ map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 
 map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "Delete buffer" })
 map("n", "<leader>ba", "<cmd>%bd|e#|bd#<cr>", { desc = "Close other buffers" })
+map("n", "<leader>ca", vim.lsp.buf.code_action)
