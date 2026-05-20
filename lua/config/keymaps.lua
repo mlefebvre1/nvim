@@ -44,7 +44,6 @@ map("n", "<leader>bD", "<cmd>:bd<cr>", { desc = "Delete Buffer and Window" })
 -- Clear search and stop snippet on escape
 map({ "i", "n", "s" }, "<esc>", function()
 	vim.cmd("noh")
-	-- LazyVim.cmp.actions.snippet_stop()
 	return "<esc>"
 end, { expr = true, desc = "Escape and Clear hlsearch" })
 
@@ -108,11 +107,6 @@ end, { desc = "Quickfix List" })
 
 map("n", "[q", vim.cmd.cprev, { desc = "Previous Quickfix" })
 map("n", "]q", vim.cmd.cnext, { desc = "Next Quickfix" })
-
--- formatting
-map({ "n", "x" }, "<leader>cf", function()
-	-- LazyVim.format({ force = true })
-end, { desc = "Format" })
 
 -- diagnostic
 local diagnostic_goto = function(next, severity)

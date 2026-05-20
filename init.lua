@@ -18,10 +18,8 @@ vim.opt.rtp:prepend(lazypath)
 -- Load config
 require("config.options")
 require("config.keymaps")
--- require("config.autocmds")
 require("config.lazy") -- this is where lazy.setup() lives
 
 require("lsp.gopls")
 require("lsp.pyright")
--- require("lsp.rust_analyzer")
 require("lsp.clangd")

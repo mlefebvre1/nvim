@@ -3,25 +3,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 vim.g.autoformat = true
 
--- Snacks animations
--- Set to `false` to globally disable all snacks animations
-vim.g.snacks_animate = true
-
--- if the completion engine supports the AI source,
--- use that instead of inline suggestions
-vim.g.ai_cmp = true
-
--- LazyVim root dir detection
--- Each entry can be:
--- * the name of a detector function like `lsp` or `cwd`
--- * a pattern or array of patterns like `.git` or `lua`.
--- * a function with signature `function(buf) -> string|string[]`
-vim.g.root_spec = { "lsp", { ".git", "lua" }, "cwd" }
-
--- Set LSP servers to be ignored when used with `util.root.detectors.lsp`
--- for detecting the LSP root
-vim.g.root_lsp_ignore = { "copilot" }
-
 -- Hide deprecation warnings
 vim.g.deprecation_warnings = false
 
@@ -44,12 +25,12 @@ opt.confirm = true -- Confirm to save changes before exiting modified buffer
 opt.cursorline = true -- Enable highlighting of the current line
 opt.expandtab = true -- Use spaces instead of tabs
 opt.fillchars = {
-  foldopen = "",
-  foldclose = "",
-  fold = " ",
-  foldsep = " ",
-  diff = "╱",
-  eob = " ",
+	foldopen = "",
+	foldclose = "",
+	fold = " ",
+	foldsep = " ",
+	diff = "╱",
+	eob = " ",
 }
 opt.foldlevel = 99
 opt.foldmethod = "indent"
@@ -94,5 +75,3 @@ opt.virtualedit = "block" -- Allow cursor to move where there is no text in visu
 opt.wildmode = "longest:full,full" -- Command-line completion mode
 opt.winminwidth = 5 -- Minimum window width
 opt.wrap = false -- Disable line wrap
-
-

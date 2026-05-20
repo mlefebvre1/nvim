@@ -15,7 +15,6 @@ return {
 					"clang-format",
 					-- Linters
 					"golangci-lint",
-					"clangtidy",
 				},
 			})
 		end,

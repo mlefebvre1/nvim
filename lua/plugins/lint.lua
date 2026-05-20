@@ -7,8 +7,6 @@ return {
 		lint.linters_by_ft = {
 			go = { "golangcilint" },
 			python = { "ruff" },
-			c = { "clangtidy" },
-			cpp = { "clangtidy" },
 		}
 
 		vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost", "InsertLeave" }, {
