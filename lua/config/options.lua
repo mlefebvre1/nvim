@@ -78,3 +78,10 @@ opt.virtualedit = "block" -- Allow cursor to move where there is no text in visu
 opt.wildmode = "longest:full,full" -- Command-line completion mode
 opt.winminwidth = 5 -- Minimum window width
 opt.wrap = false -- Disable line wrap
+
+-- treesitter options (requires nvim 0.12+)
+vim.treesitter.language.add("markdown")
+vim.treesitter.language.add("rust")
+vim.treesitter.language.add("go")
+vim.treesitter.language.add("python")
+vim.treesitter.language.add("lua")
