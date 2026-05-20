@@ -10,6 +10,7 @@ return {
 			function()
 				require("fzf-lua").grep_cword()
 			end,
+			mode = { "n", "v" },
 			desc = "Search word under cursor",
 		},
 		{ "<leader>sg", "<cmd>FzfLua live_grep<cr>", desc = "Live grep" },

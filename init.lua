@@ -20,6 +20,5 @@ require("config.options")
 require("config.keymaps")
 require("config.lazy") -- this is where lazy.setup() lives
 
-require("lsp.gopls")
 require("lsp.pyright")
 require("lsp.clangd")

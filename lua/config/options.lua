@@ -13,6 +13,9 @@ vim.g.trouble_lualine = true
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
 
+-- inlay-hints
+vim.lsp.inlay_hint.enable(true)
+
 local opt = vim.opt
 
 opt.autowrite = true -- Enable auto write

@@ -137,8 +137,8 @@ map("n", "<leader>uI", function()
 end, { desc = "Inspect Tree" })
 
 -- windows
-map("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
-map("n", "<leader>|", "<C-W>v", { desc = "Split Window Right", remap = true })
+map("n", "<leader>ws", "<C-W>s", { desc = "Split Window Below", remap = true })
+map("n", "<leader>wr", "<C-W>v", { desc = "Split Window Right", remap = true })
 map("n", "<leader>wd", "<C-W>c", { desc = "Delete Window", remap = true })
 
 -- tabs
