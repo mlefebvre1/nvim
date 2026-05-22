@@ -80,8 +80,15 @@ opt.winminwidth = 5 -- Minimum window width
 opt.wrap = false -- Disable line wrap
 
 -- treesitter options (requires nvim 0.12+)
-vim.treesitter.language.add("markdown")
-vim.treesitter.language.add("rust")
-vim.treesitter.language.add("go")
-vim.treesitter.language.add("python")
-vim.treesitter.language.add("lua")
+local languages = { "markdown", "rust", "go", "python", "lua" }
+
+for _, lang in ipairs(languages) do
+	vim.treesitter.language.add(lang)
+end
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = languages,
+	callback = function()
+		vim.treesitter.start()
+	end,
+})
