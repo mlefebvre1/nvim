@@ -52,6 +52,7 @@ return {
 		opts = {},
 		config = function()
 			require("go").setup({
+				lsp_keymaps = false,
 				lsp_cfg = {
 					settings = {
 						gopls = {
