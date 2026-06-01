@@ -8,6 +8,7 @@ return {
 				"gomod",
 				"gowork",
 				"gosum",
+				"json5",
 			},
 			sync_install = false,
 			auto_install = false,

@@ -32,6 +32,9 @@ return {
 							check = {
 								command = "clippy",
 							},
+							cargo = {
+								features = "all",
+							},
 						},
 					},
 				},
@@ -77,6 +80,7 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 		opts = {
 			settings = {
+				complete_function_calls = true,
 				tsserver_semantic_tokens = true,
 				expose_as_code_action = "all",
 				tsserver_file_preferences = {
