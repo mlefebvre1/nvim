@@ -13,6 +13,7 @@ return {
 					"ruff",
 					"stylua",
 					"clang-format",
+					"taplo",
 					-- Linters
 					"golangci-lint",
 					"eslint",

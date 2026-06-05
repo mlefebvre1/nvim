@@ -9,6 +9,7 @@ return {
 				c = { "clang_format" },
 				cpp = { "clang_format" },
 				lua = { "stylua" },
+				toml = { "taplo" },
 			},
 			format_on_save = {
 				timeout_ms = 500,
