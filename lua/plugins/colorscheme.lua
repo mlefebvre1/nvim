@@ -18,6 +18,7 @@ return {
 				hl.NeoTreeDimText = { fg = "#6b7080" }
 				hl.Comment = { fg = "#7a8394", italic = true }
 				hl.SnacksPickerGitStatusUntracked = { fg = "#6b7080" }
+				hl.Visual = { bg = "#3e4452", fg = "NONE" }
 			end,
 		})
 		vim.cmd("colorscheme andromeda")
