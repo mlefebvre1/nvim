@@ -10,16 +10,22 @@ return {
 		indent = { enabled = true },
 		input = { enabled = true },
 		image = { enabled = true },
+		picker = { enabled = true },
 		notifier = {
 			enabled = true,
 			timeout = 3000,
 		},
-		picker = { enabled = true },
 		quickfile = { enabled = true },
 		scope = { enabled = true },
 		scroll = { enabled = true },
 		statuscolumn = { enabled = true },
 		words = { enabled = true },
+		terminal = {
+			win = {
+				position = "bottom",
+				height = 0.3,
+			},
+		},
 		styles = {
 			notification = {
 				-- wo = { wrap = true } -- Wrap notifications
@@ -465,7 +471,7 @@ return {
 			desc = "Dismiss All Notifications",
 		},
 		{
-			"<c-/>",
+			"<leader>ft",
 			function()
 				Snacks.terminal()
 			end,

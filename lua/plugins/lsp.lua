@@ -28,12 +28,15 @@ return {
 		init = function()
 			vim.g.rustaceanvim = {
 				server = {
-					settings = {
+					default_settings = {
 						["rust-analyzer"] = {
 							check = {
 								command = "clippy",
 							},
 							cargo = {
+								extraEnv = {
+									DAOS_DIR = "/home/mlefebvre/workspace/daos/.nix-daos",
+								},
 								features = "all",
 							},
 						},
